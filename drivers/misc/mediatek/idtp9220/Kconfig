@@ -1,0 +1,10 @@
+config IDTP9220
+	bool "idtp9220 wireless Charger"
+	default n
+	select REGMAP_I2C
+	help
+	  Say Y to include support for idtp9220 wireless Charger.
+	  idtp9220 is a wireless battery charger.
+	  The driver supports charger enable/disable.
+	  The driver reports the charger status via the power supply framework.
+	  The driver controls idtp9220 via I2C and
