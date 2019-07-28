@@ -1,0 +1,160 @@
+GPIO'S usage in stock kernel (3.10) mercury ticwatch 2-intl
+
+GPIO 0 
+	set_sim_gpio
+
+GPIO 1
+	set_sim_gpio	
+
+GPIO 2
+	set_sim_gpio
+
+GPIO 3
+	set_sim_gpio
+
+GPIO 25	OUTPUT
+	CWMCU_probe		mooneye match
+
+GPIO 26	INPUT
+	CWMCU_probe		mooneye match
+	wakeup_pin_reset_isra_7
+
+GPIO 61
+	mxt_probe		mooneye match
+	tpd_i2c_probe
+	sub_C02FE4E4
+	mxt_timer_work
+
+GPIO 62
+	mxt_probe		mooneye match
+	tpd_i2c_probe
+	sub_C02FE4E4
+	mxt_timer_work
+
+GPIO 63	INPUT
+	battery_probe	-> ?? interrupt charger wakeup IDTP9220??
+	
+GPIO 64	OUTPUT
+	mtk_wcn_cmb_sdio_off_constprop_0
+	board_sdio_ctrl
+
+GPIO 65
+	wmt_plat_pmu_ctrl
+	wmt_detect_chip_pwr_ctrl
+
+GPIO 66
+	wmt_plat_rst_ctrl
+	wmt_detect_chip_pwr_ctrl
+
+GPIO 89
+	mt6605_probe	(NFC)
+
+GPIO 90	INPUT
+	wmt_plat_gps_lna_ctrl
+
+GPIO 101
+	wmt_plat_uart_rx_ctrl
+	wmt_plat_uart_ctrl
+	mtk_uart_switch_rx_to_gpio
+	mtk_uart_switch_to_rx
+
+GPIO 102
+	wmt_plat_uart_ctrl
+	mtk_uart_switch_tx_to_gpio
+	mtk_uart_switch_to_tx
+
+GPIO 103
+	mtk_uart_switch_rx_to_gpio
+	mtk_uart_switch_to_rx
+
+GPIO104
+	mtk_uart_switch_tx_to_gpio
+	mtk_uart_switch_to_tx
+
+GPIO 117
+	mt6605_probe	(NFC)
+	
+GPIO 118
+	mt6605_probe	(NFC)
+
+GPIO 119
+	mt6605_probe	(NFC)
+
+GPIO 120
+	mt6605_probe	(NFC)
+
+GPIO 128	OUTPUT
+	sub_C02FB95C
+	sub_C02FF1C4
+
+GPIO 129	OUTPUT
+	mxt_probe		mooneye match
+	tpd_i2c_probe
+
+GPIO 138			-> to be verify,  extracted from data structure
+	idtp9220_chip_enable	
+
+GPIO 139	INPUT
+	mxt_probe		mooneye match
+	_mxt_read_reg_ext
+	_mxt_write_reg_ext
+	mxt_timer_work
+
+GPIO 142
+	sub_C02FB95C
+	sub_C02FF1C4
+	sub_C02FF8B8
+
+GPIO 143	INPUT
+	CWMCU_probe	mooneye match
+
+GPIO 145	INPUT
+	CWMCU_probe	mooneye match
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+
